@@ -4,7 +4,9 @@ FROM node:10
 WORKDIR /usr/src/app
 
 
-COPY app/package*.json ./
+COPY app/package*.json ./\
+# security check
+# 
 
 RUN npm install ci --only=production
 
